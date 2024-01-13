@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>OnClick Events</h3>
+    <button>Click to change Events Title</button>
+    <button> Default Text</button>
+
+
+    <h1 id="increment-number">0</h1>
+    <button id="btn-increment">Increment + 1</button>
+
+
+    <script>
+        document.getElementById('btn-increment').addEventListener('click', function () {
+            const primaryValueField = document.getElementById('increment-number');
+            const primaryValueString = primaryValueField.innerText;
+            const primaryValue = parseInt(primaryValueString);
+            const newprimaryValue = primaryValue + 1;
+            primaryValueField.innerText = newprimaryValue;
+        })
+    </script>
+</body>
+
+</html>
